@@ -19,12 +19,13 @@
   flex-direction: column;
   border-radius: 0.75rem;
   gap: 1.25rem;
+  height: max-content;
 }
 .main__card > h3 {
   text-align: center;
   color: #fff;
 }
-.main__card > a {
+.main__card > button {
   display: inline-block;
   background: #fff;
   border-radius: 0.75rem;
@@ -34,9 +35,17 @@
   cursor: pointer;
   font-weight: 600;
 }
-.main__card > a:hover {
+.main__card > button:hover {
   background: none;
   color: #fff;
+}
+.main__add {
+  font-size: 56px;
+  background: none;
+  border-radius: 50%;
+  height: max-content;
+  padding: 12px 7px;
+  cursor: pointer;
 }
 
 body {
