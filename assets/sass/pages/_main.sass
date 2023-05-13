@@ -1,1 +1,33 @@
-
+.main
+  background: $yellow
+  height: 100%
+  &__content
+    width: 80rem
+    margin: auto
+  &__cards
+    display: grid
+    gap: 7.5rem
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
+  &__card
+    border: 2px solid #fff
+    display: flex
+    padding: 2.1875rem
+    align-items: center
+    flex-direction: column
+    border-radius: .75rem
+    gap: 1.25rem
+    > h3
+      text-align: center
+      color: #fff
+    > a
+      display: inline-block
+      background: #fff
+      border-radius: .75rem
+      border: .125rem solid #fff
+      padding: .75rem 1.4375rem
+      transition: .5s all
+      cursor: pointer
+      font-weight: 600
+      &:hover
+        background: none
+        color: #fff

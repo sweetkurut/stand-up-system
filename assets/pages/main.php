@@ -8,17 +8,69 @@
   <title>Home page</title>
 </head>
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col">
-      Вопрос 1
-    </div>
-    <div class="col">
-      Вопрос 2
-    </div>
-    <div class="col">
-      Вопрос 3
-    </div>
+<div class="main">
+  <div class="main__content">
+    <div class="main__cards">
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
+        <div  class="main__card">
+          <h3>Список вопросов</h3>
+          <a href="">Подробнее</a>
+        </div>
   </div>
 </div>
 
