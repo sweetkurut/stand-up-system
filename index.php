@@ -1,16 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Stand-Up-System</title>
-</head>
-<body>
-
-
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<?php
+//url
+$request_url = rtrim(ltrim(urldecode(parse_url($_SERVER['REQUEST_URI'],5)), '/'), '/');
+$params = array_filter(explode("/", $request_url)); 
+//если в url передано 2 параметра
+if (count($params) == 2) {
+    $dynamic_routes = [
+        'offers' =>  'pages/offer.php',
+    ];
+    if (isset($dynamic_routes[$params[0]])) {
+        $get = $params[1];
+        require_once $dynamic_routes[$params[0]];
+    }
+    else require_once ('pages/404.php');
+}
+//если в url передано меньше двух параметров
+elseif (count($params) < 2) {
+    $routes = [
+        '' => 'pages/avtoritation.php',
+        'avtoritation' => 'pages/avtoritation.php',
+        'registration' => 'pages/registration.php',
+    ];
+    if (isset($routes[$request_url])) require_once $routes[$request_url];
+    else require_once ('pages/404.php');
+}
+else require_once ('pages/404.php');
+?>
