@@ -68,3 +68,8 @@ if(xz.length > 0) {
 //   attributeOldValue: true,
 //   characterDataOldValue: true,
 // });
+
+let form = document.querySelector(".form");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+});
