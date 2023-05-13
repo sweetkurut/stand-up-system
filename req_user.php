@@ -1,8 +1,8 @@
 <?php
 include 'config.php';
     $name =filter_var(trim($_POST['name']));
-    $email =filter_var(trim($_POST['email']));
     $number =filter_var(trim($_POST['number']));
+    $email =filter_var(trim($_POST['email']));
     $password =filter_var(trim($_POST['password']));
   
     if(mb_strlen($name) < 5 or mb_strlen($name) > 100){
@@ -21,7 +21,7 @@ include 'config.php';
     if($result){
         echo('зарегистрированный user вы не можете повторно регистрировать');
     }else{
-        $add_user = "INSERT INTO `users` (`name`, `email`,`number`, `password`) VALUES('$name', '$email','$number','$password')";
+        $add_user = "INSERT INTO `users` (`name`,`number`, `email`,`password`) VALUES('$name', '$number','$email','$password')";
         mysqli_query($connect, $add_user);
 
     }
@@ -32,5 +32,5 @@ include 'config.php';
 
 
 
-    header('location: /');
+    header('location: /main');
 ?>

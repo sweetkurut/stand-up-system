@@ -14,5 +14,5 @@ include 'config.php';
     setcookie('user' , $email, time() + 36000, "/");
 
 
-    header("Location: /main");
+    header("Location: /req");
 ?>

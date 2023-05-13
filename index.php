@@ -16,12 +16,13 @@ if (count($params) == 2) {
 //если в url передано меньше двух параметров
 elseif (count($params) < 2) {
     $routes = [
-        '' => 'pages/avtoritation.php',
-        'avtoritation' => 'pages/avtoritation.php',
-        'registration' => 'pages/registration.php',
+        '' => './assets/pages/auth.php',
+        '/' => 'pages/main.php',
+        'auth' => 'pages/auth.php',
+        'req' => './assets/pages/req.php',
     ];
     if (isset($routes[$request_url])) require_once $routes[$request_url];
-    else require_once ('pages/404.php');
+    else require_once ('./assets/pages/404.php');
 }
-else require_once ('pages/404.php');
+else require_once ('./assets/pages/404.php');
 ?>

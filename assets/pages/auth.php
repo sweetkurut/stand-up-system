@@ -11,7 +11,7 @@
   <div class="wrapper">
     <div class="container">
       <h1 class="auth__title">Авторизация</h1>
-      <form class="form">
+      <form class="form" action="auth_user.php" method="POST">
         <div class="input-fields">
           <div class="input-group">
             <label class="label"><h3 class="label-title">Email</h3></label>
@@ -22,11 +22,11 @@
             <input type="password" class="input" placeholder="Введите пароль">
           </div>
           <div class="input-btn">
-            <button type="submit" class="btn">Отправить</button>
+            <a href="main.php"><button type="submit" class="btn">Отправить</button></a>
           </div>
           <div class="input-btn__req">
             <div class="blog1"><p class="req-text">Не зарегистрировались?</p></div>
-            <div class="blog2"><button type="submit" class="btn-req">Зарегистрироваться</button></div>
+            <div class="blog2"><a href="req"><button type="submit" class="btn-req">Зарегистрироваться</button></a></div>
           </div>
         </div>
       </form>
